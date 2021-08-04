@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Latihan1</string>
+    <string name="title">Tugas Module 2</string>
+    <string name="btn1">Rumus Lingkaran</string>
+    <string name="btn2">Perbandigan Bilangan</string>
+    <string name="game_puzzle">Game Puzzle</string>
+    <string name="calculator">Calculator</string>
+</resources>
