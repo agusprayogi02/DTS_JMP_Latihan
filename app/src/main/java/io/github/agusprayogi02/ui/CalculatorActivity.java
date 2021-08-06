@@ -13,6 +13,7 @@ import com.google.android.material.appbar.MaterialToolbar;
 
 import java.text.MessageFormat;
 import java.util.List;
+import java.util.Locale;
 
 import io.github.agusprayogi02.R;
 
@@ -114,7 +115,7 @@ public class CalculatorActivity extends AppCompatActivity {
 //                inputs.add(Double.parseDouble(inputData));
 //                Log.d("ini Sama dengan: ", String.valueOf(inputs.size() ));
 
-                hasil = hasilCekOperator(Double.parseDouble(inputData2), operator, Double.parseDouble(inputData));
+                hasil = hasilCekOperator(Double.parseDouble(inputData2), operator.toLowerCase(Locale.ROOT), Double.parseDouble(inputData));
 //                for (int i = 0; i < inputs.size() - 1; i++) {
 //                    hasil = hasilCekOperator(inputs.get(i), operators.get(i), inputs.get(i+1));
 //                }
@@ -142,7 +143,7 @@ public class CalculatorActivity extends AppCompatActivity {
         switch (operator) {
             case "/":
                 return String.valueOf(input / input1);
-            case "X":
+            case "x":
                 return String.valueOf(input * input1);
             case "-":
                 return String.valueOf(input - input1);
