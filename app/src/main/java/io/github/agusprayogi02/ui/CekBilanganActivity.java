@@ -55,7 +55,7 @@ public class CekBilanganActivity extends AppCompatActivity {
                 hasilCek = num1 + " Sama Dengan " + num2;
             } else if (num1 > num2) {
                 hasilCek = num1 + " Lebih Besar dari " + num2;
-            } else if (num1 < num2) {
+            } else {
                 hasilCek = num1 + " Lebih Kecil dari " + num2;
             }
             hasil.setText(hasilCek);

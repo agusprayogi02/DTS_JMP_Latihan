@@ -3,10 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/border_shape.xml" value="0.166" />
+        <entry key="app/src/main/res/drawable/button_calculator.xml" value="0.1355" />
         <entry key="app/src/main/res/drawable/ic_arrow_back_ios_24.xml" value="0.23177083333333334" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.23177083333333334" />
         <entry key="app/src/main/res/drawable/rounded_shape.xml" value="0.23177083333333334" />
-        <entry key="app/src/main/res/layout/activity_calculator.xml" value="0.22" />
+        <entry key="app/src/main/res/font-v26/roboto.xml" value="0.2453125" />
+        <entry key="app/src/main/res/font/roboto.xml" value="0.2453125" />
+        <entry key="app/src/main/res/layout/activity_calculator.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_calkulator.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_cek_bilangan.xml" value="0.215625" />
         <entry key="app/src/main/res/layout/activity_game_puzzle.xml" value="0.22" />

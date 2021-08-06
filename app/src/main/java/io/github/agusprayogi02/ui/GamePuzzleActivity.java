@@ -1,17 +1,16 @@
 package io.github.agusprayogi02.ui;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.Toast;
+
+import com.google.android.material.appbar.MaterialToolbar;
 
 import java.util.Random;
 
@@ -27,7 +26,7 @@ public class GamePuzzleActivity extends AppCompatActivity {
     private final String[] hurufValid = new String[]{
             "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", ""
     };
-    private final String[] huruf =  new String[]{
+    private final String[] huruf = new String[]{
             "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", ""
     };
 
@@ -39,6 +38,9 @@ public class GamePuzzleActivity extends AppCompatActivity {
         buatBtnHuruf();
         buatRandom();
         loadDataToView();
+        MaterialToolbar tb = findViewById(R.id.tbGame);
+        tb.setNavigationOnClickListener(view -> finish());
+        tb.setOnMenuItemClickListener(this::menuSelected);
     }
 
     private void loadDataToView() {
@@ -98,15 +100,7 @@ public class GamePuzzleActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.puzzle_menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    public boolean menuSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_ulang:
                 buatRandom();
