@@ -5,4 +5,5 @@
     <string name="btn2">Perbandigan Bilangan</string>
     <string name="game_puzzle">Game Puzzle</string>
     <string name="calculator">Calculator</string>
+    <string name="demo_recyclerview">Demo recyclerview</string>
 </resources>

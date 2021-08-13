@@ -10,10 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Latihan.Default">
         <activity
+            android:name=".ui.CrudFileStreamActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.DemoRecyclerviewActivity"
+            android:exported="true" />
+        <activity
             android:name=".ui.CalculatorActivity"
             android:exported="true"
-            android:theme="@style/Theme.Latihan.NoActionBar"
-            />
+            android:theme="@style/Theme.Latihan.NoActionBar" />
         <activity
             android:name=".ui.GamePuzzleActivity"
             android:exported="true"

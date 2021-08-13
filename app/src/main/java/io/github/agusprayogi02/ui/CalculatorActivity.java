@@ -14,6 +14,7 @@ import com.google.android.material.appbar.MaterialToolbar;
 import java.text.MessageFormat;
 import java.util.List;
 import java.util.Locale;
+import java.util.Stack;
 
 import io.github.agusprayogi02.R;
 
@@ -29,11 +30,14 @@ public class CalculatorActivity extends AppCompatActivity {
     private String operator = "";
     private String hasilSemua = "";
 
+    private Stack<Double> inputDatas = new Stack<Double>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
 
+//        inputDatas.
         initViews();
     }
 
